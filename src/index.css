@@ -1,14 +1,14 @@
 main {
-	margin: 0 auto;
-	max-width: 90%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 50px 30px;
 }
 :root {
-  --primary: #052F5F;
+  --primary: #052f5f;
   --secondary: #005377;
-  --tertiary: #06A77D;
-  --quarternary: #D5C67A;
-  --quinternary: #F1A208;
+  --tertiary: #06a77d;
+  --quarternary: #d5c67a;
+  --quinternary: #f1a208;
   --light: #fafafa;
   --dark: #000000;
   --darker: #111111;
@@ -16,7 +16,6 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
 }
 
 * {
@@ -34,11 +33,10 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
-  letter-spacing: .1em;
-  background: var(--dark);
+  letter-spacing: 0.1em;
+  background: var(--secondary);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
-
+  font-family: "Poiret One", cursive;
 }
 
 h1,
@@ -47,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -93,7 +91,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--secondary);
 }
 
 header a {
@@ -104,7 +102,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -113,12 +111,12 @@ button {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -144,7 +142,7 @@ input {
 
 input:focus {
   border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 li {
@@ -155,15 +153,15 @@ nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
 }
 
 textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
+  width: 600px;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
 }
 
 .container {
@@ -244,27 +242,86 @@ textarea {
 }
 
 button {
-	background: var(--primary);
-	border: 0;
-	border-radius: 5px;
-	color: #fff;
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	padding: 10px 15px;	
+  background: var(--tertiary);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
 }
 
 a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
+  border-radius: 5px;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 2px 4px;
+  margin-left: -2px;
+  margin-right: -2px;
 }
 
 .navActive {
   color: var(--secondary);
+}
+
+.footer-section {
+  border-bottom: var(--content-section-border);
+  width: 100%;
+  height: auto;
+  background-color: var(--quaternary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: none;
+}
+
+.footer-container {
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-cards {
+  text-decoration: none;
+  padding: 5px;
+  max-width: 33%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  box-sizing: border-box;
+}
+
+.footer-cards:hover {
+  border: 5px solid var(--tertiary);
+  padding: 0;
+}
+
+.footer-cards img {
+  width: 65%;
+  height: 55%;
+}
+
+.footer-section h4 {
+  color: var(--quarternary);
+  width: 100%;
+  text-align: center;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.footer-section a:visited {
+  text-decoration: none;
+  color: var(--primary);
 }
