@@ -1,28 +1,43 @@
 import React from "react";
-// import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
+function Nav({ setCurrentPage }) {
   return (
     <nav>
       <ul className="flex-row">
         <li className="mx-2">
-          <a data-testid="about" href="#about">
-            About me
+          <a
+            data-testid="about"
+            href="#about"
+            onClick={() => setCurrentPage("About Me")}
+          >
+            About Me
           </a>
         </li>
         <li className="mx-2">
-          <a data-testid="contact" href="#contact">
-            Contact
-          </a>
-        </li>
-        <li className="mx-2">
-          <a data-testid="projects" href="#projects">
+          <a
+            data-testid="about"
+            href="#about"
+            onClick={() => setCurrentPage("Projects")}
+          >
             Projects
           </a>
         </li>
         <li className="mx-2">
-          <a data-testid="resume" href="#resume">
+          <a
+            data-testid="about"
+            href="#about"
+            onClick={() => setCurrentPage("Resume")}
+          >
             Resume
+          </a>
+        </li>
+        <li className="mx-2">
+          <a
+            data-testid="about"
+            href="#about"
+            onClick={() => setCurrentPage("Contact Me")}
+          >
+            Contact Me
           </a>
         </li>
       </ul>

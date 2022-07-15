@@ -301,7 +301,7 @@ a {
 }
 
 .footer-cards:hover {
-  border: 5px solid var(--tertiary);
+  border: 5px solid var(--primary);
   padding: 0;
 }
 
