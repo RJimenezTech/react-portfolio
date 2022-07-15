@@ -325,3 +325,48 @@ a {
   text-decoration: none;
   color: var(--primary);
 }
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-single {
+  margin: 1%;
+  width: 45%;
+  display: flex;
+  position: relative;
+}
+
+.project-single:hover{
+  opacity: 0.5;
+  border: 1px red solid;
+}
+.project-single .project-name {
+  background-color: var(--quarternary);
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 1.5%;
+  font-size: 2.5vw;
+}
+
+.project-single .project-tech {
+  background-color: var(--quarternary);
+  color: var(--secondary);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  padding: 2%;
+  font-size: 1.25vw;
+}
+
+.project-single img {
+  width: auto;
+  height: auto;
+}

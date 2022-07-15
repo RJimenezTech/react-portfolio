@@ -3,9 +3,14 @@ import SingleProject from "./SingleProject";
 
 function Projects() {
   return (
-    <div>
+    <section className="project-container">
       <SingleProject />
-    </div>
+      <SingleProject />
+      <SingleProject />
+      <SingleProject />
+      <SingleProject />
+      <SingleProject />
+    </section>
   );
 }
 
