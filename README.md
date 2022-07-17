@@ -4,7 +4,7 @@
 This task is to create a portfolio using React skills
 
 ## Usage
-App can be viewed at http://rjimeneztech.github.io/react-portfolio
+App can be viewed at https://rjimeneztech.github.io/react-portfolio
 
 ## User Story
 
