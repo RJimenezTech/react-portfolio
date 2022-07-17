@@ -47,7 +47,7 @@ const projects = [
 ];
  
   return (
-    <section className="project-container">
+    <section className="project-container" id="projects">
       {projects.map((project, index) => {
         return (
             <div className="project-single" key={index}>

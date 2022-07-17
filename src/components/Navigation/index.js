@@ -6,7 +6,6 @@ function Nav({ setCurrentPage }) {
       <ul className="flex-row">
         <li className="mx-2">
           <a
-            data-testid="about"
             href="#about"
             onClick={() => setCurrentPage("About Me")}
           >
@@ -15,8 +14,7 @@ function Nav({ setCurrentPage }) {
         </li>
         <li className="mx-2">
           <a
-            data-testid="about"
-            href="#about"
+            href="#projects"
             onClick={() => setCurrentPage("Projects")}
           >
             Projects
@@ -24,8 +22,7 @@ function Nav({ setCurrentPage }) {
         </li>
         <li className="mx-2">
           <a
-            data-testid="about"
-            href="#about"
+            href="#resume"
             onClick={() => setCurrentPage("Resume")}
           >
             Resume
@@ -33,8 +30,7 @@ function Nav({ setCurrentPage }) {
         </li>
         <li className="mx-2">
           <a
-            data-testid="about"
-            href="#about"
+            href="#contact"
             onClick={() => setCurrentPage("Contact Me")}
           >
             Contact Me

@@ -20,7 +20,7 @@ main {
 
 * {
   box-sizing: border-box;
-  /* outline: 1px red solid; */
+  outline: 1px red solid;
 }
 
 html,
@@ -276,7 +276,7 @@ a {
 .hero-image {
   text-align: center;
   margin: 25px;
-  max-width: 45%;
+  max-width: 60%;
   height: 100%;
 }
 
@@ -301,21 +301,21 @@ a {
 }
 
 .footer-container {
-  width: 75%;
+  width: 60%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: flex-start; */
 }
 
 .footer-cards {
   text-decoration: none;
-  padding: 5px;
   max-width: 33%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   align-items: center;
   flex-basis: 100%;
@@ -323,19 +323,19 @@ a {
 }
 
 .footer-cards:hover {
-  border: 5px solid var(--primary);
-  padding: 0;
+  opacity: .5;
 }
 
 .footer-cards img {
   width: 65%;
-  height: 55%;
+  height: 50%;
 }
 
 .footer-section h4 {
   color: var(--quarternary);
   width: 100%;
   text-align: center;
+  font-size: 1vw;
 }
 
 .footer-section a {

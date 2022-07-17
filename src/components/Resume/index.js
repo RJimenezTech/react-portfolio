@@ -2,7 +2,7 @@ import React from "react";
 
 function Resume() {
   return (
-    <div>
+    <div id="resume">
       <h1>Education</h1>
       <ul>
         <li>Full-Stack Web Development Bootcamp, Rice University - 2022</li>
