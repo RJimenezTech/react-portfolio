@@ -13,7 +13,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -37,8 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://rjimeneztech.github.io/react-portfolio", 
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
-  }
+  "homepage": "https://rjimeneztech.github.io/react-portfolio"
 }
