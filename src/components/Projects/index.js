@@ -13,6 +13,11 @@ const projects = [
       link: "http://habitualtracker.herokuapp.com/",
       github: "https://github.com/RJimenezTech/habit-tracker", 
       image: habitualImage
+    },    {
+      name: "Tech Blog",
+      link: "https://rjimeneztech-tech-blog.herokuapp.com/",
+      github: "https://github.com/RJimenezTech/tech-blog", 
+      image: blogImage
     },
     {
       name: "Occasional Movie",
@@ -32,12 +37,7 @@ const projects = [
       github: "https://github.com/RJimenezTech/weather-dashboard", 
       image: weatherImage
     },
-    {
-      name: "Tech Blog",
-      link: "https://rjimeneztech-tech-blog.herokuapp.com/",
-      github: "https://github.com/RJimenezTech/tech-blog", 
-      image: blogImage
-    },
+
     {
       name: "Run Buddy",
       link: "https://rjimeneztech.github.io/run-buddy/",
@@ -50,26 +50,27 @@ const projects = [
     <section className="project-container">
       {projects.map((project, index) => {
         return (
-            <div className="project-single my-2" key={index}>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              <img src={project.image} alt={project.name}/>      
-            </a>
-            <div className="project-text-container">
-              <a 
-              href={project.link} 
-              className="project-text" 
-              target="_blank" 
-              rel="noopener noreferrer">
+            <div className="project-single" key={index}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img src={project.image} alt={project.name}/>      
+              </a>
+              <div className="project-text-container">
+                <a 
+                href={project.link} 
+                className="project-text" 
+                target="_blank" 
+                rel="noopener noreferrer">
                 {project.name}
-              </a>
-              <a 
-              href={project.github}
-              className="project-text" 
-              target="_blank" 
-              rel="noopener noreferrer">
-                GitHub Repo
-              </a>
-            </div>
+                </a>
+                <a 
+                href={project.github}
+                className="project-text" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                  GitHub Repo
+                  
+                </a>
+              </div>
           </div>
         )})
       }

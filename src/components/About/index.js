@@ -3,10 +3,17 @@ import coverImage from "../../assets/images/cover/cover-image.jpg";
 
 function About() {
   return (
-    <section className="my-5">
-      <h1 id="about">Who am I?</h1>
+    <section className="about-me my-5">
+      <h1 id="about">Who am I?</h1>        
+      <div className="hero-image">
+          <img
+            src={coverImage}
+            className="my-2 hero-image"
+            style={{ width: "50%" }}
+            alt="headshot"/>
+        </div>
       <div className="my-2">
-        <p>My name is Robert Jimenez</p>
+        <p>My name is Robert Jimenez. I'm a software and web developer.</p>
         <p>
           I'm an inquisitive and motivated engineer with tons of project
           experience from a coding bootcamp on top of 10+ years of experience in
@@ -32,13 +39,7 @@ function About() {
           adult, I’m currently dabbling in Modern Standard Arabic with some
           Egyptian dialect in the mix. On the list for languages that I plan
           on studying: French and American Sign Language. Let’s connect.  
-        </p>      
-        <img
-        src={coverImage}
-        className="my-2"
-        style={{ width: "50%" }}
-        alt="headshot"
-      />
+        </p>
       </div>
     </section>
   );
