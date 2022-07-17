@@ -20,7 +20,7 @@ main {
 
 * {
   box-sizing: border-box;
-  outline: 1px red solid;
+  /* outline: 1px red solid; */
 }
 
 html,
@@ -408,4 +408,23 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact-link {
+  color: var(--quarternary);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: none;
+  color: var(--tertiary)
+}
+
+.main-link {
+  color: var(--quarternary);
+  text-decoration: none;
+}
+
+.main-link:hover {
+  color: var(--tertiary);
 }

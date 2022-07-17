@@ -8,6 +8,7 @@ function Nav({ setCurrentPage }) {
           <a
             href="#about"
             onClick={() => setCurrentPage("About Me")}
+            className="main-link"
           >
             About Me
           </a>
@@ -16,6 +17,7 @@ function Nav({ setCurrentPage }) {
           <a
             href="#projects"
             onClick={() => setCurrentPage("Projects")}
+            className="main-link"
           >
             Projects
           </a>
@@ -24,6 +26,7 @@ function Nav({ setCurrentPage }) {
           <a
             href="#resume"
             onClick={() => setCurrentPage("Resume")}
+            className="main-link"
           >
             Resume
           </a>
@@ -32,6 +35,7 @@ function Nav({ setCurrentPage }) {
           <a
             href="#contact"
             onClick={() => setCurrentPage("Contact Me")}
+            className="main-link"
           >
             Contact Me
           </a>
