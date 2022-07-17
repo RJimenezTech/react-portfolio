@@ -338,35 +338,27 @@ a {
   width: 45%;
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
-.project-single:hover{
+.project-single img:hover{
   opacity: 0.5;
-  border: 1px red solid;
-}
-.project-single .project-name {
-  background-color: var(--quarternary);
-  color: var(--secondary);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  padding: 1.5%;
-  font-size: 2.5vw;
-}
-
-.project-single .project-tech {
-  background-color: var(--quarternary);
-  color: var(--secondary);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: auto;
-  padding: 2%;
-  font-size: 1.25vw;
 }
 
 .project-single img {
   width: auto;
   height: auto;
+}
+.project-text-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-text {
+  background-color: var(--quarternary);
+  color: var(--secondary);
+  padding: 1.5%;
+  font-size: 1vw;
 }
