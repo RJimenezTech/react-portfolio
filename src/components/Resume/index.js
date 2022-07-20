@@ -1,8 +1,15 @@
 import React from "react";
+import resume from '../../assets/Robert-Jimenez-Resume.pdf';
 
 function Resume() {
   return (
     <div id="resume">
+      <p>Download resume here: 
+        <a href={resume} 
+        download='robertjimenezresume.pdf'>
+          Resume
+        </a>
+      </p>
       <h1>Education</h1>
       <ul>
         <li>Full-Stack Web Development Bootcamp, Rice University - 2022</li>
@@ -40,8 +47,8 @@ function Resume() {
       </ul>
       <h2>Human Languages</h2>
       <ul>
-        <li>English (native)</li>
-        <li>Spanish (intermediate)</li>
+        <li>English (Native)</li>
+        <li>Spanish (Intermediate)</li>
         <li>Arabic (Beginner)</li>
       </ul>
     </div>
